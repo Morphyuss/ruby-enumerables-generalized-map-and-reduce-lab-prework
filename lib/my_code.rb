@@ -13,7 +13,7 @@ end
 
   def reduce(source_array, starting_point = 0)
     sum = starting_point
-        source_array.each do |x, !!x|
+        source_array.each do |x, !x|
         sum += x
       end
     sum
