@@ -16,7 +16,7 @@ end
         source_array.each do |x|
         sum += x
         yield
-        source_array.none? { |x| }
+        source_array.any? { |x| }
       end
 
     sum
