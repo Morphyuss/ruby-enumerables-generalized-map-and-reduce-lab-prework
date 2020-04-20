@@ -11,12 +11,11 @@ def map(source_array)
 end
 
 
-  def reduce(source_array, starting_point = 0, &block)
+  def reduce(source_array, starting_point = 0)
     sum = starting_point
         source_array.each do |x|
         sum += x
-        
-        block.call(source_array, starting_point=0)
+        yield
 
       end
     sum
