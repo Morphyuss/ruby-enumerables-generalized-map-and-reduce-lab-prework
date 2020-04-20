@@ -15,7 +15,7 @@ end
     sum = starting_point
         source_array.each do |x|
         sum += x
-        yield(block.call(source_array, starting_point))
+        yield(block.call(source_array, starting_point=0))
 
       end
     sum
