@@ -18,7 +18,6 @@ end
         yield
         source_array.all?{ |x| }
       end
-
     sum
   end
 
