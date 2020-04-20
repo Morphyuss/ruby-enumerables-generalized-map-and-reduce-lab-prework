@@ -10,10 +10,11 @@ def map(source_array)
       new_array
 end
 
-
+require 'pry'
   def reduce(source_array, starting_point = 0)
     sum = starting_point
         source_array.each do |x|
+          binding.pry
         sum += yield(sum, x)
       end
     sum
