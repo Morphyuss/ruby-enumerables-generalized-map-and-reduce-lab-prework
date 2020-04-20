@@ -21,6 +21,7 @@ end
     end
         while i < source_array.length
         sum = yield(sum, source_array[i])
+        i += 1
       end
     sum
   end
