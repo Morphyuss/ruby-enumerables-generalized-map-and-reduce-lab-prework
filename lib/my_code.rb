@@ -10,19 +10,11 @@ def map(source_array)
       new_array
 end
 
-require 'pry'
-  def reduce(source_array, starting_point = nil)
-      if starting_point
-        sum = starting_point
-        i = 0
-      else
-        sum = source_array[0]
-        i = 1
+
+  def reduce(source_array, starting_point = 0)
+    sum = starting_point
+        source_array.each do |x|
+        sum = yield(sum, x)
       end
-        while i < source_array.length
-          binding.pry
-        sum += yield(sum, source_array[i])
-        i += 1
-        end
     sum
   end
