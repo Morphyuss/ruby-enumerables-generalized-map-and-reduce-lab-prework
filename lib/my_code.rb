@@ -15,8 +15,6 @@ end
     sum = starting_point
         source_array.each do |x, !!x|
         sum += x
-        yield
-
       end
     sum
   end
