@@ -16,7 +16,7 @@ end
         source_array.each do |x|
         sum += x
       end
-      yield
+      yield(starting_point)
     sum
   end
 
